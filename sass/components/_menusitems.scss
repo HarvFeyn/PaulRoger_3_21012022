@@ -1,0 +1,42 @@
+@import "../utils/utils";
+
+
+.menusitems{
+    background-color: $backgroundgrey;
+    padding: 25px;
+    font-weight: bold;
+    border-radius: 25px;
+    width: 70%;
+    height: 30px;
+    margin: 15px;
+    box-shadow: 6px 6px 15px rgba(0,0,0,.2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: $primarycolor;
+    }
+
+    &__number{
+        position: absolute;
+        left: -12px;
+        display: block;
+        background-color: $primarycolor;
+        border-radius: 100%;
+        padding: 5px;
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__desc{
+        margin-left: 20px;
+    }
+
+    .fas{
+        margin-left: 30px;
+    }
+}

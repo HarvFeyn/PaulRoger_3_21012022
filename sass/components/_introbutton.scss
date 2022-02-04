@@ -1,0 +1,16 @@
+@import "../utils/utils";
+
+.pinkbutton{
+    background: linear-gradient(to bottom right, $secondarycolor, $primarycolor);
+    border-radius: 25px;
+    padding: 17px;
+    box-shadow: 6px 6px 15px rgba(0,0,0,.2);
+    border: 0px;
+    color: white;
+    font-size: 110%;
+    font-weight: 500;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
