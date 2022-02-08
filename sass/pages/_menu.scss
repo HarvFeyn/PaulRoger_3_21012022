@@ -48,6 +48,33 @@
         i{
             margin-right: 30px;
         }
+
+        .far{
+            position: relative;
+            .fas{
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $primarycolor;
+                opacity: 0;
+                &:hover{
+                    animation:fadeheart 1s both;
+
+                    @keyframes fadeheart {
+                        0% {
+                            opacity: 0;
+                        }
+                    }
+
+                    @keyframes fadeheart {
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 
     &__flexbox {
@@ -140,6 +167,9 @@
                 transition-timing-function: linear;
                 transition: flex 1s;
                 flex: 1 0 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
 
                 &:hover {
                     flex: unset;
@@ -148,7 +178,9 @@
 
             h4{
                 margin: 2px;
+                white-space: nowrap;
                 text-overflow: ellipsis;
+                overflow: hidden;
             }
 
             &__desc{
@@ -157,6 +189,7 @@
                 justify-content: space-between;
                 margin: 2px;
                 padding: 0px;
+                flex: 85%;
 
                 p{
                     margin: 0px;
@@ -166,12 +199,13 @@
                     direction: ltr;
                     white-space: nowrap;
                     overflow: hidden;
-                    flex: 1 0 70%;
+                    flex: 1 0 60%;
                 }
 
                 .price{
                     font-weight: 600;
                     flex: 1 0 5%;
+                    text-overflow: unset;
                 }
             }
 
@@ -182,7 +216,7 @@
                 background-color: $tertiarycolor;
                 color: white;
                 text-align: center;
-                width: 77px;
+                flex: 2 2 66px;
             }
 
         }
